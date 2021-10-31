@@ -12,6 +12,7 @@ Feature: Google Search Functionality
     Then verify the result has iPhone
     Then close the application
 
+  @teapot  #We can use the tags to run one by one the scenarios
   Scenario: TC02_teapot_search
     Given user is on the google page
     And user search for tea pot
