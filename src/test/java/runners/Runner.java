@@ -8,7 +8,7 @@ import org.junit.runner.RunWith;
 
 @CucumberOptions(
         plugin = {
-                "html:target/default-cucumber-reports",
+                "html:target/default-cucumber-reports.html",
                 "json:target/json-reports/cucumber.json",
                 "junit:target/xml-report/cucumber.xml"
         },
@@ -16,7 +16,7 @@ import org.junit.runner.RunWith;
         features = "./src/test/resources/features",
         glue = "stepdefinitions",
         tags = "@room_reservation",
-        dryRun = true
+        dryRun = false
 
 )
 public class Runner {
