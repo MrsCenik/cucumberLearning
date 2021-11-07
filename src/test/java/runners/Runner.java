@@ -10,13 +10,16 @@ import org.junit.runner.RunWith;
         plugin = {
                 "html:target/default-cucumber-reports.html",
                 "json:target/json-reports/cucumber.json",
-                "junit:target/xml-report/cucumber.xml"
+                "junit:target/xml-report/cucumber.xml",
+                "rerun:target/failedRerun.txt"
         },
 
         features = "./src/test/resources/features",
-        glue = "stepdefinitions",
-        tags = "@room_reservation",
-        dryRun = false
+        glue = "stepdefinitions", //Must
+        tags = "@wip", //Optional. Without tags, runner runs all features
+        dryRun = false //optional
+        //Without dreRun(dryRun = false) is default,
+        //we can not check completion error without seeing the browser
 
 )
 public class Runner {

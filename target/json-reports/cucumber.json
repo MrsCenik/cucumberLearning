@@ -1,9 +1,9 @@
 [
   {
-    "line": 24,
+    "line": 23,
     "elements": [
       {
-        "start_timestamp": "2021-10-31T16:44:37.854Z",
+        "start_timestamp": "2021-11-06T20:36:21.136Z",
         "before": [
           {
             "result": {
@@ -15,14 +15,14 @@
             }
           }
         ],
-        "line": 25,
+        "line": 26,
         "name": "TC01_user_should_login_with_manager_profile",
         "description": "",
         "id": "fe1009-room-reservation;tc01-user-should-login-with-manager-profile",
         "after": [
           {
             "result": {
-              "duration": 462000000,
+              "duration": 458000000,
               "status": "passed"
             },
             "match": {
@@ -35,10 +35,10 @@
         "steps": [
           {
             "result": {
-              "duration": 8636000000,
+              "duration": 8841000000,
               "status": "passed"
             },
-            "line": 26,
+            "line": 27,
             "name": "user is on the application page",
             "match": {
               "location": "stepdefinitions.Day19_Login_Step_Definition.user_is_on_the_application_page()"
@@ -50,12 +50,18 @@
               "duration": 168000000,
               "status": "passed"
             },
-            "line": 27,
+            "line": 28,
             "name": "user enters manager_id and manager_password",
             "match": {
               "location": "stepdefinitions.Day19_Login_Step_Definition.user_enters_manager_id_and_manager_password(io.cucumber.datatable.DataTable)"
             },
             "rows": [
+              {
+                "cells": [
+                  "username",
+                  "password"
+                ]
+              },
               {
                 "cells": [
                   "manager",
@@ -67,10 +73,10 @@
           },
           {
             "result": {
-              "duration": 2408000000,
+              "duration": 2649000000,
               "status": "passed"
             },
-            "line": 29,
+            "line": 31,
             "name": "user clicks on the login button",
             "match": {
               "location": "stepdefinitions.Day19_Login_Step_Definition.user_clicks_on_the_login_button()"
@@ -79,10 +85,10 @@
           },
           {
             "result": {
-              "duration": 61000000,
+              "duration": 58000000,
               "status": "passed"
             },
-            "line": 30,
+            "line": 32,
             "name": "verify the \"manager\" is displayed",
             "match": {
               "arguments": [
@@ -97,71 +103,10 @@
           },
           {
             "result": {
-              "duration": 604000000,
-              "status": "passed"
-            },
-            "line": 31,
-            "name": "take a screenshot",
-            "match": {
-              "location": "stepdefinitions.Reusable_Step_Definition.takeAScreenshot()"
-            },
-            "keyword": "Then "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@room_reservation"
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2021-10-31T16:44:50.272Z",
-        "before": [
-          {
-            "result": {
-              "status": "passed"
-            },
-            "match": {
-              "location": "stepdefinitions.Hooks.setUp()"
-            }
-          }
-        ],
-        "line": 32,
-        "name": "TC02_user_should_navigate_room_reservation_page",
-        "description": "",
-        "id": "fe1009-room-reservation;tc02-user-should-navigate-room-reservation-page",
-        "after": [
-          {
-            "result": {
-              "duration": 414000000,
-              "status": "passed"
-            },
-            "match": {
-              "location": "stepdefinitions.Hooks.tearDown(io.cucumber.java.Scenario)"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario",
-        "steps": [
-          {
-            "result": {
-              "duration": 1821000000,
+              "duration": 611000000,
               "status": "passed"
             },
             "line": 33,
-            "name": "user navigates to the create_room_reservation page",
-            "match": {
-              "location": "stepdefinitions.Day20_Room_Reservation_Step_Definitions.userNavigatesToTheCreate_room_reservationPage()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 466000000,
-              "status": "passed"
-            },
-            "line": 34,
             "name": "take a screenshot",
             "match": {
               "location": "stepdefinitions.Reusable_Step_Definition.takeAScreenshot()"
@@ -172,170 +117,9 @@
         "tags": [
           {
             "name": "@room_reservation"
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2021-10-31T16:44:52.981Z",
-        "before": [
-          {
-            "result": {
-              "status": "passed"
-            },
-            "match": {
-              "location": "stepdefinitions.Hooks.setUp()"
-            }
-          }
-        ],
-        "line": 36,
-        "name": "TC03_user_should_book_a_reservation",
-        "description": "",
-        "id": "fe1009-room-reservation;tc03-user-should-book-a-reservation",
-        "after": [
-          {
-            "result": {
-              "duration": 1619000000,
-              "status": "passed"
-            },
-            "match": {
-              "location": "stepdefinitions.Hooks.tearDown(io.cucumber.java.Scenario)"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario",
-        "steps": [
-          {
-            "result": {
-              "duration": 974000000,
-              "status": "passed"
-            },
-            "line": 37,
-            "name": "user enters all required fields",
-            "match": {
-              "location": "stepdefinitions.Day20_Room_Reservation_Step_Definitions.user_enters_all_required_fields(io.cucumber.datatable.DataTable)"
-            },
-            "rows": [
-              {
-                "cells": [
-                  "idUser",
-                  "idHotelRoom",
-                  "price",
-                  "dateStart",
-                  "dateEnd",
-                  "adultAmount",
-                  "childrenAmount",
-                  "contactNameSurname",
-                  "contactPhone",
-                  "contactEmail",
-                  "notes"
-                ]
-              },
-              {
-                "cells": [
-                  "manager",
-                  "Ayse",
-                  "500",
-                  "11/08/2021",
-                  "11/12/2021",
-                  "2",
-                  "3",
-                  "test",
-                  "(999) 999-9999",
-                  "test@gmail.com",
-                  "test note"
-                ]
-              }
-            ],
-            "keyword": "Given "
           },
           {
-            "result": {
-              "duration": 53000000,
-              "status": "passed"
-            },
-            "line": 40,
-            "name": "user clicks on the approved_checkbox",
-            "match": {
-              "location": "stepdefinitions.Day20_Room_Reservation_Step_Definitions.user_clicks_on_the_approved_checkbox()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 67000000,
-              "status": "passed"
-            },
-            "line": 41,
-            "name": "user clicks on the paid_checkbox",
-            "match": {
-              "location": "stepdefinitions.Day20_Room_Reservation_Step_Definitions.user_clicks_on_the_paid_checkbox()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 435000000,
-              "status": "passed"
-            },
-            "line": 42,
-            "name": "take a screenshot",
-            "match": {
-              "location": "stepdefinitions.Reusable_Step_Definition.takeAScreenshot()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 44000000,
-              "status": "passed"
-            },
-            "line": 43,
-            "name": "user clicks on the save_button",
-            "match": {
-              "location": "stepdefinitions.Day20_Room_Reservation_Step_Definitions.user_clicks_on_the_save_button()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "status": "passed"
-            },
-            "line": 44,
-            "name": "user verifies the success_message",
-            "match": {
-              "location": "stepdefinitions.Day20_Room_Reservation_Step_Definitions.user_verifies_the_success_message()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 434000000,
-              "status": "passed"
-            },
-            "line": 45,
-            "name": "take a screenshot",
-            "match": {
-              "location": "stepdefinitions.Reusable_Step_Definition.takeAScreenshot()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 208000000,
-              "status": "passed"
-            },
-            "line": 46,
-            "name": "close the application",
-            "match": {
-              "location": "stepdefinitions.Day17_GoogleSearchStepDefinitions.close_the_application()"
-            },
-            "keyword": "Then "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@room_reservation"
+            "name": "@wip"
           }
         ]
       }
@@ -350,7 +134,7 @@
         "name": "@room_reservation",
         "type": "Tag",
         "location": {
-          "line": 23,
+          "line": 22,
           "column": 1
         }
       }

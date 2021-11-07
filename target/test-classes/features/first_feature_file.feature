@@ -6,13 +6,14 @@ Feature: Google Search Functionality
       # Given should be used as a preconditions. Usually Given is used in the first step
       # Then should be used for verification. Usually it is used at the end
       # And and When are used in the middle step to describe actions
+  @smoke @regression
   Scenario: TC01_iPhone_search
     Given user is on the google page
     And user search for iPhone
     Then verify the result has iPhone
     Then close the application
 
-  @teapot  #We can use the tags to run one by one the scenarios
+  @teapot @smoke @regression  #We can use the tags to run one by one the scenarios
   Scenario: TC02_teapot_search
     Given user is on the google page
     And user search for tea pot
@@ -29,7 +30,8 @@ Feature: Google Search Functionality
     And user search for flower
     Then verify the result has flower
     Then close the application
-  Scenario: TC04_tesla_search
+ @tesla @smoke
+ Scenario: TC04_tesla_search
     Given user is on the google page
     And user search for tesla
     Then verify the result has tesla

@@ -1,0 +1,5 @@
+Cucumber Parallel Testing:
+Step1: Add Cucumber Failsafe Plugin
+Step2: Add Cucumber Surefire Plugin
+------------------------------------
+Step3: Add Cucumber reporting plugin for better visual reports

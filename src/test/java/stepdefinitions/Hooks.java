@@ -9,8 +9,8 @@ import utilities.Driver;
 
 public class Hooks {
     //What is hooks class in cucumber?
-    //hooks has Before and After annotations
-    //hooks will run Before and After each Scenario
+    //Hooks have Before and After annotations
+    //Hooks will run Before and After each Scenario
     //What is in your After in the hooks?
         //In cucumber hooks I use reports and I take screenshot
         //I designed my hooks. It takes screenshot when a test scenario fails
